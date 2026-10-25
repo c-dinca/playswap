@@ -1,0 +1,21 @@
+name: Game preset request
+description: Ask for a game to be set up automatically
+labels: [game preset]
+body:
+  - type: input
+    id: game
+    attributes:
+      label: Game and Steam app id
+      placeholder: "ELDEN RING, 1245620"
+    validations:
+      required: true
+  - type: input
+    id: process
+    attributes:
+      label: Process name while it runs (Task Manager > Details)
+      placeholder: eldenring
+  - type: textarea
+    id: paths
+    attributes:
+      label: Settings and save locations
+      description: Folders or files, ideally with path tokens such as %APPDATA%. A PCGamingWiki link is fine.

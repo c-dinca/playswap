@@ -1,0 +1,29 @@
+name: Bug report
+description: Something doesn't work as it should
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      placeholder: "Counter-Strike 2, started from Steam"
+  - type: input
+    id: versions
+    attributes:
+      label: PlaySwap and Windows versions
+      placeholder: "PlaySwap 1.2.0, Windows 11 24H2"
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: playswap.log
+      description: From %LOCALAPPDATA%\PlaySwap. It contains folder paths, so check it before posting.
+      render: text
